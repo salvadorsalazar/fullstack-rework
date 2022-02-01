@@ -64,15 +64,14 @@
         {name: 'George', amount: 320}
     ];
 
-    //justin waljthorugh with for statement
-    // for (var i = 0; i < shoppers.length; i += 1) {
-    //     var discountedAmount = calculateDiscount(shoppers[i].amount, discountThreshold, discountPercentage);
-    //     var output = shoppers[i].name + ' is purchasing ' + shoppers[i].amount +
-    //         ' of stuff. He will get ' + discountedAmount +
-    //         ' off the purchase and pay ' +
-    //         (shoppers[i].amount - discountedAmount) + '.';
-    //     console.log(output);
-    // }
+    for (var i = 0; i < shoppers.length; i += 1) {
+        var discountedAmount = calculateDiscount(shoppers[i].amount, discountThreshold, discountPercentage);
+        var output = shoppers[i].name + ' is purchasing ' + shoppers[i].amount +
+            ' of stuff. He will get ' + discountedAmount +
+            ' off the purchase and pay ' +
+            (shoppers[i].amount - discountedAmount) + '.';
+        console.log(output);
+    }
 
 
 
