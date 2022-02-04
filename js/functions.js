@@ -32,7 +32,7 @@ console.log(helloMessage);
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-var myName = 'Salvador';
+var myName = 'SalvadorSalazar';
 console.log(sayHello(myName));
 
 
