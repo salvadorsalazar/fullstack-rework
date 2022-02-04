@@ -1,71 +1,71 @@
-// var pizza = 4;
-// while(pizza>0){
-//     console.log("There are " + " pizza slices");
-//     pizza = pizza -1;
-//     console.log('now theres ' + pizza + " slices left");
-// }
-// console.log('is it already all eaten?:')
+var pizza = 4;
+while(pizza>0){
+    console.log("There are " + " pizza slices");
+    pizza = pizza -1;
+    console.log('now theres ' + pizza + " slices left");
+}
+console.log('is it already all eaten?:')
 
-// var counter = 0
-// while (counter < 10){
-//     console.log(counter);
-//     counter++;
-// }
+var counter = 0
+while (counter < 10){
+    console.log(counter);
+    counter++;
+}
 
-// var counter = 100
-// while (counter >= 0){
-//     console.log(counter);
-//     counter--;
-// }
-//
-
-// var counter = 1;
-// var number = 5;
-// while (counter <=5){
-//     number = number *2;
-//     console.log(number);
-//     counter++;
-// }
+var counter = 100
+while (counter >= 0){
+    console.log(counter);
+    counter--;
+}
 
 
-// var number = 5;
-// while (number < 200){
-//     number *=2;
-//     console.log(number);
-//
-// }
+var counter = 1;
+var number = 5;
+while (counter <=5){
+    number = number *2;
+    console.log(number);
+    counter++;
+}
+
+
+var number = 5;
+while (number < 200){
+    number *=2;
+    console.log(number);
+
+}
 
 
 
-// var total =0;
-// var priceOfItem;
-//var priceOfItem=parseFloat(prompt('enter the price of item?'));
-// alert('price of item is :$ ' + priceOfItem);
-// var total = total + priceOfItem;
-// alert('your total cost for item/items is : $' + total)//totalCost = priceOfItem
+var total =0;
+var priceOfItem;
+var priceOfItem=parseFloat(prompt('enter the price of item?'));
+alert('price of item is :$ ' + priceOfItem);
+var total = total + priceOfItem;
+alert('your total cost for item/items is : $' + total)//totalCost = priceOfItem
 
 //=======================================================================
 //accumalotr variabnle
-//var total =0;
-//var priceOfItem;
-//sentine value :stop
-// while(true){
-//     userInput = prompt('Enter price of item :' + '\n' + 'Enter stop to end');
-//     //sentine value :stop
-//     if(userInput == 'stop' || userInput ==='') {
-//             alert("Your total coast is now $ " + total);
-//             break;
-//         }else{
-//             priceOfItem = parseFloat(userInput);
-//             total = total + parseFloat(priceOfItem);
-//             alert("your total coast is now $" + total.toFixed(2))
-//             }
-//         }
+var total =0;
+var priceOfItem;
+sentine value :stop
+while(true){
+    userInput = prompt('Enter price of item :' + '\n' + 'Enter stop to end');
+    //sentine value :stop
+    if(userInput == 'stop' || userInput ==='') {
+            alert("Your total coast is now $ " + total);
+            break;
+        }else{
+            priceOfItem = parseFloat(userInput);
+            total = total + parseFloat(priceOfItem);
+            alert("your total coast is now $" + total.toFixed(2))
+            }
+        }
 
 //============================================================================
 
 
-/*
+
         //lets get a random mumber
 var number= Math.ceil(Math.random()*6);
 var guess;
@@ -85,7 +85,7 @@ alert('your guess of ' + guess + 'matches the number ' + number);
 //tell user how to end the program
 //?? wrn use when they reach the limit
 
-*/
+
 
 
 
