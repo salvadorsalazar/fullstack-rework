@@ -21,26 +21,26 @@
  */
 
 //
-//
-// function analyzeColor(Color){
-//
-//      if(Color === "red"){
-//              return ("Strawberries are red");
-//          }else if (Color === "orange"){
-//              return ("oranges are orange");
-//          }else if (Color === "yellow"){
-//              return ("the sun is yellow");
-//          }else if (Color === "green"){
-//              return ("the grass is green");
-//          }else if (Color === "blue"){
-//              return ("the sky is blue");
-//          }else if (Color === "violet"){
-//              return ("violets are the color violet");
-//          } else{
-//              return
-//          ("That color is not available");
-//          }
-// }
+
+function analyzeColor(Color){
+
+     if(Color === "red"){
+             return ("Strawberries are red");
+         }else if (Color === "orange"){
+             return ("oranges are orange");
+         }else if (Color === "yellow"){
+             return ("the sun is yellow");
+         }else if (Color === "green"){
+             return ("the grass is green");
+         }else if (Color === "blue"){
+             return ("the sky is blue");
+         }else if (Color === "violet"){
+             return ("violets are the color violet");
+         } else{
+             return
+         ("That color is not available");
+         }
+}
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -63,35 +63,35 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Refactor your above function to use a switch-case statement
  */
 
-//
-// function analyzeColor(colorInput) {
-//     switch (colorInput) {
-//         case("red"):
-//             return "Strawberries are red";
-//             break;
-//         case("orange"):
-//             return "oranges are orange";
-//             break;
-//         case("yellow"):
-//             return "the sun is yellow";
-//             break;
-//         case("green"):
-//             return "the grass is green";
-//             break;
-//         case("blue"):
-//             return "the sky is blue";
-//             break;
-//         case("indigo"):
-//             return "blueberries are indigo";
-//             break;
-//         case("violet"):
-//             return "Violets are violets";
-//
-//         default:
-//             return "Color is not available";
-//     }
-// }
-//
+
+function analyzeColor(colorInput) {
+    switch (colorInput) {
+        case("red"):
+            return "Strawberries are red";
+            break;
+        case("orange"):
+            return "oranges are orange";
+            break;
+        case("yellow"):
+            return "the sun is yellow";
+            break;
+        case("green"):
+            return "the grass is green";
+            break;
+        case("blue"):
+            return "the sky is blue";
+            break;
+        case("indigo"):
+            return "blueberries are indigo";
+            break;
+        case("violet"):
+            return "Violets are violets";
+
+        default:
+            return "Color is not available";
+    }
+}
+
 
 
 /**
