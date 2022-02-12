@@ -1,5 +1,5 @@
 while (true){
-    var oddNumber = parseInt(prompt("Please enter an odd number between 1 and 50. I will skip it."));
+    var oddNumber = parseInt(prompt("Please enter odd number between 1 and 50. I will skip it."));
     if (oddNumber % 2 === 1 && oddNumber < 51 && oddNumber >=1){
         break;
     }
