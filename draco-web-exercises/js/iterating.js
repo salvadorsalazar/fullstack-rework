@@ -11,6 +11,7 @@
     var names = ['Sally', 'Fred', 'Cathy', 'Bob'];
 
     /**
+     *
      * TODO:
      * Create a log statement that will log the number of elements in the names
      * array.
