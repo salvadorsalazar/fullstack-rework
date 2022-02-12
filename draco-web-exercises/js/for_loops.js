@@ -62,32 +62,32 @@ for (i = 1; i < 10; i++){
 
 // Clean it up and make it a for loop within a for loop
 
-// for (var outer = 1; outer < 10; outer++){
-//     var output = "";
-//     for(var inner = 1; inner <= outer; inner++ ){
-//         output += outer;
-//     }
-//     console.log(output);
-// }
+for (var outer = 1; outer < 10; outer++){
+    var output = "";
+    for(var inner = 1; inner <= outer; inner++ ){
+        output += outer;
+    }
+    console.log(output);
+}
 
 // Sebastian McKelvey's solution (a student in Draco):
 
-// var crazyOne = 1;
-// for (i = 1; i < 10; i++) {
-//     console.log(i * crazyOne);
-//     crazyOne  = crazyOne.toString() + 1;
-// }
+var crazyOne = 1;
+for (i = 1; i < 10; i++) {
+    console.log(i * crazyOne);
+    crazyOne  = crazyOne.toString() + 1;
+}
 
 // The most efficient and sleek solution:
-// for(var i = 1; i <= 9; i++){
-//     console.log(i.toString().repeat(i));
-// }
+for(var i = 1; i <= 9; i++){
+    console.log(i.toString().repeat(i));
+}
 
 // A for loop that counts down from 100 to 5 by 5s
 
-// for (i = 100; i > 0; i = i-5){
-//     console.log(i);
-// }
+for (i = 100; i > 0; i = i-5){
+    console.log(i);
+}
 
 
 
