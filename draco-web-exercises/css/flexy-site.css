@@ -1,0 +1,79 @@
+html {
+    background-color: #deded8;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header, article, aside, footer {
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+}
+
+aside {
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav a {
+    /* flex is shorthand for flex-grow, flex-shrink, and flex-basis*/
+    /* flex is assigned to flex items, not flex containers */
+    flex: auto;
+    background: #ccc;
+    color: black;
+    text-align: center;
+    margin: 0 5px;
+    padding: 5px 0;
+    text-decoration: none;
+    flex-shrink: 1;
+}
+
+/*nav a:first-of-type {*/
+/*    margin-left: 10px;*/
+/*}*/
+
+nav a:first-of-type, nav a:nth-of-type(2), nav a:last-of-type {
+    flex-shrink: 2;
+}
+
+nav a:hover {
+    outline: 1px solid red;
+    color: red;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 35rem) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav, header {
+        order: -1;
+    }
+
+    main {
+        display: flex;
+        border-bottom: 0.5rem solid;
+    }
+
+    article {
+        flex: 75%;
+    }
+
+    aside {
+        flex: 25%;
+    }
+}
+
+

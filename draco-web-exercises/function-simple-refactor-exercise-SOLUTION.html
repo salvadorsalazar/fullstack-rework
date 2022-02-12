@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  "use strict";
+
+  function getNumberInput(promptMsg) {
+      return parseFloat(prompt(promptMsg).trim());
+  }
+
+  function sum(num1, num2) {
+      return parseFloat(num1) + parseFloat(num2);
+  }
+
+  function createMsg(num1, num2) {
+      return 'The sum is ' + sum(num1, num2);
+  }
+
+  function processInteraction() {
+      var num1 = getNumberInput('Enter a number');
+      var num2 = getNumberInput('Enter another number');
+      alert(createMsg(num1, num2));
+  }
+
+  processInteraction()
+  processInteraction()
+
+</script>
+</body>
+</html>

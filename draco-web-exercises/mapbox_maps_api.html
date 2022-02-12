@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox Exercise</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        /* give the map a defined size */
+        #map {
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- define HTML element for map -->
+    <div id='map'></div>
+
+    <!-- dropdown for zoom level -->
+    <select id="zoom-level">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15" selected>15</option>
+        <option value="20">20</option>
+    </select>
+
+    <!-- a script that defines the api token -->
+    <script src="js/keys.js"></script>
+
+    <!-- the required script for Mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- the script for geocoding from the curriculum -->
+    <script src="js/mapbox-geocode-utils.js"></script>
+
+    <!-- script for working with the map -->
+    <script>
+
+        // selecting the zoom dropdown input
+        var select = document.querySelector('#zoom-level');
+
+        // an array of restaurant objects
+        var restaurants = [
+            {
+                name: 'Silo',
+                address: 'Silo: Elevated Cuisine, San Antonio, TX',
+                message: 'It\'s great!'
+            },
+            {
+                name: 'Chama Gaucha Steakhouse',
+                address: 'Chama Gaucha Steakhouse, San Antonio, TX',
+                message: 'Too good!'
+            },
+            {
+                name: 'Tarka Indian Kitchen',
+                address: 'Tarka Indian Kitchen, San Antonio, TX',
+                message: 'Awesome!'
+            }
+        ];
+
+        // a function to place all markers on a map
+        function placeAllMarkers(restaurants, map) {
+            restaurants.forEach(function(restaurant) {
+                placeMarker(restaurant, map);
+            });
+        }
+
+        // a function to place an individual popup and marker on a map
+        function placeMarker(restaurantObject, map) {
+            geocode(restaurantObject.address, MAPBOX_API_TOKEN).then(function(coordinates) {
+                var popup = new mapboxgl.Popup()
+                    .setHTML('<h3>' + restaurantObject.name + '</h3><p>' + restaurantObject.message + '</p>');
+                new mapboxgl.Marker()
+                    .setLngLat(coordinates)
+                    .setPopup(popup)
+                    .addTo(map);
+            });
+        }
+
+        // set the token for Mapbox API
+        mapboxgl.accessToken = MAPBOX_API_TOKEN;
+
+        // Draw map
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v9',
+            zoom: 10,
+            center: [-98.4916, 29.4252]
+        });
+
+        // add event listener to zoom select
+        select.addEventListener('change', function() {
+            map.setZoom(select.value);
+        });
+
+        // Place markers on the map
+        placeAllMarkers(restaurants, map);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    background-color: papayawhip;
+    font-family: fantasy;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: underline;
+    color: purple;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+table {
+    background-color: brown;
+}
+
+td, th {
+    padding: 10px;
+}
+
+th {
+    font-size: 1.5em;
+}
+
+tr {
+    background-color: azure;
+}
+
+a {
+    font-weight: 200;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    font-style: italic;
+}
+
+section img {
+    transform: rotate(10deg);
+    opacity: .3;
+}
+
+section img:hover {
+    opacity: 1;
+    transition: opacity 2s ease;
+}

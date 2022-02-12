@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Side Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            display: flex;
+            flex-direction: row;
+        }
+        nav {
+            background: black;
+            color: white;
+            width: 300px;
+            height: 100vh;
+            border-right: 2px solid grey;
+            flex-shrink: 0;
+        }
+        main {
+            margin: 1em;
+        }
+        main h1 {
+            font-size: 60px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 1em;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background: grey;
+        }
+        nav img {
+            width: 100%;
+            padding: 1em;
+            box-sizing: border-box;
+        }
+        hr {
+            margin: 2em 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="img/cat.jpg" alt="">
+        <h1>Welcome, Mr. Pickles!</h1>
+        <hr>
+        <ul>
+            <li>
+                <a href="#">WHISKER</a>
+            </li>
+            <li>
+                <a href="#">About us</a>
+            </li>
+            <li>
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Main Content</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi exercitationem explicabo fugiat illum, natus nulla officia vero! Alias, aut consequuntur doloremque ex facilis, laborum nesciunt quia, rerum sit soluta tenetur ullam vitae voluptate. Ad, adipisci amet error eum facilis illo non soluta sunt. Ea est excepturi fuga nisi placeat praesentium temporibus veritatis? A accusantium adipisci consequuntur dolorem eius impedit, iste maiores nam necessitatibus perspiciatis quia quo saepe sed sit suscipit tenetur ut! Autem corporis eaque excepturi iusto nemo tempora tenetur veniam. Ad assumenda deserunt earum eos facilis impedit incidunt iure laboriosam minus omnis placeat possimus praesentium, qui quidem, quos!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur dolorum eveniet provident temporibus? Amet aspernatur at beatae corporis distinctio doloremque, ducimus est et illum nemo non officiis pariatur perferendis perspiciatis quo reiciendis sed sequi suscipit tempore, vero voluptas voluptatem.</p>
+    </main>
+</body>
+</html>

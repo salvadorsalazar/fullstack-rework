@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Elements Lecture</title>
+</head>
+<body>
+
+    <div id="top"></div>
+
+    <!-- HTML Element - a part of a web page designated in HTML by a tag (or tags) -->
+
+        <!--open tag-->             <!--closing tag-->
+        <element>this is the content</element>
+
+
+    <!-- parent vs. child elements -->
+
+        <parent>
+            <child>
+                <grandchild>
+                </grandchild>
+            </child>
+        </parent>
+
+
+    <!-- div and span tags (block vs. inline) -->
+
+        <div style="background-color: blue">
+            This takes up the full width of it's parent container.
+        </div>
+
+        <span style="background-color: red">
+            This is a span and takes up the width of its content.
+        </span>
+
+        <div><span>This is ok</span></div>
+
+        <div><span>Avoid this</span></div>
+
+
+    <!--
+        block element examples: div, p, h
+        inline element examples: em, strong, a, button
+    -->
+
+
+
+    <!-- Void Elements - have no closing tag and thus no content (img, input, br, hr) - MAYBE INLINE OR BLOCK LEVEL -->
+    <!-- void elements: hr, br, img -->
+
+        <br>
+        <hr>
+        <meta>
+        <link rel="stylesheet" href="">
+        <img src="" alt="">
+
+
+    <!-- Attributes - key value pairs inside the opening tag of an element after the element name -->
+    <!-- attributes -->
+
+        <p title="This is tool tip!">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+
+    <!-- headings -->
+
+        <h1>Biggest</h1>
+        <h3>In Between</h3>
+        <h6>Smallest</h6>
+
+
+    <!-- paragraphs -->
+
+        <p>This is fine.</p>
+        <p>
+            This is also fine.
+        </p>
+
+
+    <!-- line breaks and horizontal rules -->
+
+        <hr>
+        <br>
+        <br><br> <!--avoid this-->
+
+
+    <!-- strong and emphasis-->
+
+        <p>Some <em>really</em> <strong>cool</strong> text!</p>
+
+
+    <!-- lists (unordered and ordered) -->
+
+        <!-- unordered lists -->
+        <ul>
+            <li>A cool item</li>
+            <li>Some really cool item</li>
+            <li>Some ok item</li>
+        </ul>
+
+
+        <!-- ordered lists -->
+
+        <ol>
+            <li>A cool item</li>
+            <li>Some really cool item</li>
+            <li>Some ok item</li>
+        </ol>
+
+
+    <!-- anchors -->
+
+        <!-- external links -->
+        <a href="https://google.com">Google Search Page</a>
+
+        <!-- open new tab link -->
+        <a href="https://google.com" target="_blank">Google Search Page</a>
+
+        <!-- internal links -->
+        <a href="#top">Top</a>
+
+
+    <!-- images -->
+
+        <!-- hotlinking vs. locally stored images -->
+
+        <div>
+            <img height="300" alt="Cat image" src="https://static.pexels.com/photos/20787/pexels-photo.jpg">
+        </div>
+
+        <div>
+            <img height="300" src="img/cat.jpg" alt="Cat image">
+        </div>
+
+        <!-- clickable images -->
+
+        <a href="https://google.com">
+            <img height="300" alt="Cat image" src="https://static.pexels.com/photos/20787/pexels-photo.jpg">
+        </a>
+
+
+    <!-- tables -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Breed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bubbles</td>
+                    <td>3</td>
+                    <td>Lab</td>
+                </tr>
+                <tr>
+                    <td>Butch</td>
+                    <td>7</td>
+                    <td>Pug</td>
+                </tr>
+                <tr>
+                    <td>Snickers</td>
+                    <td>11</td>
+                    <td>Chow</td>
+                </tr>
+                <tr>
+                    <td>Bubba</td>
+                    <td>2</td>
+                    <td>Mastiff</td>
+                </tr>
+            </tbody>
+        </table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

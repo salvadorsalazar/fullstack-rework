@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bom Lec</title>
+</head>
+<body>
+
+<script>
+    console.log(window);
+
+    var instructorName = "Douglas";
+    console.log(window.instructorName);
+    console.log(instructorName);
+
+    // alert()
+    // alert("Hello, " + instructorName);
+    // console.log("After the alert.");
+
+    // confirm()
+    // var shouldAlert = confirm("Are you sure?");
+    // if(shouldAlert) {
+    //     alert("Deleting everything. JK :P")
+    // }
+
+    // prompt()
+    // var userName = prompt("Enter your name");
+    // if(userName) {
+    //     alert("Hello, " + userName);
+    // }
+
+    // setInterval();
+    var consoleLogInterval = 1000;
+    var consoleLogIntervalCount = 0;
+
+    // setInterval(function() {
+    //     //Any code that we want to run at an the specified interval.
+    //     console.log("Howdy, Y'all! " + consoleLogIntervalCount);
+    //     consoleLogIntervalCount++;
+    // }, consoleLogInterval);
+
+    // inline interval value
+    // setInterval(function (){
+    //     console.log("Inlined interval time");
+    // }, 1000);
+
+    // Use a defined function as the handler
+    // function sayHello() {
+    //     console.log("Howdy from say hello.");
+    // }
+    //
+    // setInterval(sayHello, consoleLogInterval);
+
+    // var areWeThereYetInterval = 1000;
+    // var areWeThereYetCount = 0;
+    // var areWeThereYetMaxCount = 10;
+    //
+    // function sayAreWeThereYet() {
+    //     console.log("Are we there yet? for the " + areWeThereYetCount + " time!");
+    //     areWeThereYetCount++;
+    //     if( areWeThereYetCount >= areWeThereYetMaxCount ) {
+    //         console.log("For the last time, NO! Please stop!");
+    //         clearInterval(intervalId);
+    //     }
+    // }
+    //
+    // var intervalId = setInterval(sayAreWeThereYet, areWeThereYetInterval);
+    // console.log(intervalId);
+
+    // setTimeout()
+    // var delay = 5000;
+    //
+    // var bananaTimeoutId = setTimeout(function(){
+    //     confirm("Click okay to claim your $50 gas card!");
+    // }, delay);
+
+    //This will cancel the timeout.
+    //clearTimeout(bananaTimeoutId);
+    // setTimeout(function (){
+    //     location = 'http://google.com';
+    // }, 2000)
+
+    setTimeout(function(){
+        console.log("Reloading ..... ")
+        location.reload();
+    }, 3000);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    box-sizing: border-box;
+}
+
+.flexbox, .flex-item {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+/* Flex direction defines the main axis */
+    flex-wrap: wrap;
+/*    use of the flex-flow shorthand property for direction and wrap is encouraged */
+/*    flex-flow: column-reverse wrap;*/
+/*    justify-content controls how flex items in a flex line are distributed along the main axis */
+/*    justify-content: space-evenly;*/
+/*align-items controls how flex lines are distributed along the container cross-axis*/
+    align-items: flex-start;
+/* align-content controls how extra cross-axis space is distributed between and around flex lines. Applies only to multi-line containers. Has no effect on nowrap or single-line containers.*/
+/*    align-content: space-evenly;*/
+    /*height: 900px;*/
+}
+
+/* flex-grow */
+/* define if a flex item can grow when there is available space, and how much it grows proportionally to its siblings*/
+/* there's also flex-shrink and flex-basis */
+/*.five {*/
+/*    flex-grow: 0.5;*/
+/*}*/
+/*.four {*/
+/*    flex-grow: 1;*/
+/*}*/
+/*.three {*/
+/*    flex-grow: 2;*/
+/*}*/
+
+/* align-self overrides align-items on a per-flex-item basis */
+
+/*.one { align-self: flex-end; }*/
+/*.two { align-self: center; }*/
+/*.four { align-self: center; }*/
+/*.six { align-self: flex-end; }*/
+
+/* order can alter the order of items on a case-by-case basis. By default every item has order 0. */
+
+.one { order: 1;}
+.six { order: -1; }
+
+/*.large-font {*/
+/*    font-size: 150%;*/
+/*}*/
+
+/*.bigger-margin {*/
+/*    margin-top: 30px;*/
+/*}*/

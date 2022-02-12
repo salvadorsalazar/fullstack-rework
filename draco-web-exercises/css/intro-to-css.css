@@ -1,0 +1,28 @@
+/* element selector */
+h1 {
+    color: hotpink;
+    text-align: center;
+    font-size: 150px;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+/* class selector */
+.dark-orange {
+    color: darkorange;
+}
+
+/* id selector */
+#intro-to-classes {
+    color: gold;
+}
+
+/*
+ This
+ is
+ a
+ multiline
+ comment
+ */

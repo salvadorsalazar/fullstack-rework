@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Traversing the DOM in jQuery</title>
+  <style>
+    section {
+      display: flex;
+    }
+    .sansSerif {
+      font-family: sans-serif;
+    }
+    .darkMode {
+      color: white;
+      background-color: #313131;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <h1>Big Header</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur deleniti distinctio dolore doloremque doloribus ea ex impedit, laboriosam magni minima molestias, nam nihil placeat quis sunt tempora tempore vitae?</p>
+</header>
+  <main>
+    <h2>Secondary header</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut consequuntur cumque dolore impedit incidunt inventore ipsa ipsam nam quas quia quis rerum sequi similique sint ut, vero. Ducimus, id.</p>
+    <h2>Another topic</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cupiditate eos, eveniet hic impedit nam nulla qui vel! Commodi ea eaque facilis in laudantium obcaecati quod saepe sequi ullam! Voluptas?</p>
+    <h2>Last topic</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis molestiae molestias numquam quidem reiciendis rerum suscipit veniam vero voluptate. Alias ea ipsa magnam nesciunt sapiente? Doloremque eos numquam placeat.</p>
+      <h2>A nice list</h2>
+      <ul>
+        <li>Cicero</li>
+        <li>Virgil</li>
+        <li>Caesar</li>
+        <li>Augustus</li>
+        <li>Horace</li>
+      </ul>
+      <aside>
+        <button id="font-changer">Change Font of 'Another topic'</button>
+      </aside>
+
+  </main>
+
+<footer>
+  <ul>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Careers</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+  </ul>
+</footer>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+  "use strict";
+  $(document).ready(function(){
+    // $("li").each(function(){
+    //   $(this).css("font-style", "italic");
+    // });
+//The *this* keyword works with the each method, because each time the each method iterates over a nodeList, it returns an object representing that element. *this* always applies to the currently referenced object. In this case, whatever element is being iterated over at that particular moment.
+
+    // $("li").each(function(index, element){
+    //   $(element).css("font-family", "sans-serif").css("font-style", "italic");
+    //   console.log(index);
+    //   if (index % 2 !==0){
+    //     $(element).css("background-color", "cornsilk");
+    //     console.log($(this).css("background-color"));
+    //   }
+    // });
+
+    $("main ul li").each(function(index, element){
+      $(element).css("font-family", "sans-serif").css("font-style", "italic");
+      console.log(index);
+      if (index % 2 !==0){
+        $(element).css("background-color", "cornsilk");
+        console.log($(this).css("background-color"));
+      }
+    });
+
+    $("main ul li").first().css("font-size", "110%");
+    $("main ul li").last().css("text-decoration", "underline dotted");
+
+    $("#font-changer").click(function(){
+      // $("main").children().css("font-family", "sans-serif");
+      $("main").children().first().next().next().toggleClass("sansSerif");
+    });
+
+    $("h2").click(
+      function(){
+          $(this).next().slideToggle();
+        }
+    );
+
+    $("h1").hover(
+       function(){
+         $(this).parent().toggleClass("darkMode");
+       }
+    );
+  });
+
+</script>
+</body>
+</html>

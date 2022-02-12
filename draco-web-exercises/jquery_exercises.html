@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Exercises</title>
+</head>
+<body>
+<header id="head">
+    <h1>jQuery Exercises</h1>
+    <p id="codeup">A page for practicing jQuery!</p>
+</header>
+
+<div>
+    <h1 id="first-heading" class="codeup">Favorite Sodas</h1>
+    <ul>
+        <li class="codeup">Pepsi Wild Cherry</li>
+        <li>Dr. Pepper</li>
+        <li>Virgil's Root Beer</li>
+        <li>Sprite</li>
+    </ul>
+</div>
+<div class="codeup">
+    <h1 id="second-heading">Favorite Games</h1>
+    <ul>
+        <li>Gotcha Force</li>
+        <li>Persona 4</li>
+        <li>Super Mario Odyssey</li>
+        <li>River City Girls</li>
+    </ul>
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+    alert($("#first-heading").html());
+    // alert($("#second-heading").html());
+    // $(".codeup").css("border", "1px solid red");
+
+    $("li").css("font-size", "20px");
+
+    $("h1").css("background-color", "#ef0");
+    $("p").css("background-color", "palevioletred");
+    $("li").css("background-color", "skyblue");
+
+    $("h1").each(function () {
+        alert($("h1").html());
+    });
+
+    $("h1, p, li").css({"background-color": "darkred", "border": "solid 1px gold", "color": "white"});
+</script>
+</body>
+</html>

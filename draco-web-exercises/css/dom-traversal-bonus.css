@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+
+#container {
+    width: 826px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+.picture {
+    display: flex;
+    margin: 0 10px;
+    flex-direction: column;
+}
+
+.picture img {
+    border: 10px solid saddlebrown;
+}
+
+button {
+    margin-top: 15px;
+    align-self: center;
+}
+
