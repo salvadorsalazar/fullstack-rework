@@ -17,6 +17,7 @@ $(document).ready(function () {
         alert("You clicked me!");
     });
 
+
     // an element gets clicked
     // the event listener attached to that element "hears" the click event and passes on to the JavaScript interpreter the code that is attached to it
     // the interpreter runs the function specified the listener
