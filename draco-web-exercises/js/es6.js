@@ -6,30 +6,30 @@
 // let first
 // a few differences between let and var
 
-// {
-//     var name = 'javier';
-// }
-//
-// console.log(name);
+{
+    var name = 'salazar';
+}
 
-// {
-//     let lastName = 'ruedas';
-// }
-//
-// let lastName = 'reich';
-// console.log(lastName);
+console.log(name);
+
+{
+    let lastName = 'sa,'
+}
+
+let lastName = 'kuna';
+console.log(lastName);
 
 while (true) {
-    var name = 'javier';
+    var name = 'salvadr';
     break;
 }
 
 console.log(name);
 
-let name = 'Inigo Montoya';
+let name = 'Ben Quadrinaros';
 
 while (true) {
-    let name = 'justin';
+    let name = 'angela';
     break;
 }
 
