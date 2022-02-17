@@ -35,29 +35,29 @@ while (true) {
 
 console.log(name);
 
-// let name = 'jojo';
-// if (true) {let name = 'javier';}
-// console.log(name);
+let name = 'jojo';
+if (true) {let name = 'ben';}
+console.log(name);
 
-// var name = 'jojo';
-// if (true) {var name = 'javier';}
-// console.log(name);
+var name = 'jojo';
+if (true) {var name = 'ben';}
+console.log(name);
 
-// let anotherName = 'javier';
+let anotherName = 'ben';
 
-// function scopeTester(){
-    // var anotherName = 'luis';
-    // let anotherName = 'luis';
-    // anotherName = 'luis';
-// }
-// scopeTester();
-// console.log(anotherName);
+function scopeTester(){
+    var anotherName = 'sal';
+    let anotherName = 'sal';
+    anotherName = 'sal';
+}
+scopeTester();
+console.log(anotherName);
 
 // TEMPLATE LITERALS
 
-let name = 'Javier';
+let name = 'salvador';
 let job = 'programmer';
-let place = 'Texas';
+let place = 'san antonio';
 
 // old way
 console.log(name + ' is a ' + job + ' in ' + place);
@@ -69,9 +69,9 @@ console.log(`${name} is a ${job} in ${place}`);
 
 const car = {
     make: "Toyota",
-    model: "Tacoma",
-    year: 2019,
-    mileage: 12657
+    model: "corolla",
+    year: 2020,
+    mileage: 62345
 }
 
 const car2 = {
@@ -81,12 +81,12 @@ const car2 = {
     mileage: 17647
 }
 
-// let make = car.make;
-// let model = car.model;
+let make = car.make;
+let model = car.model;
 
-// const {make, model, year, mileage} = car;
-// console.log(`I spy a ${year} ${make} ${model} with ${mileage} miles`);
-//
+const {make, model, year, mileage} = car;
+console.log(`I spy a ${year} ${make} ${model} with ${mileage} miles`);
+
 // car.model = 'Tundra';
 //
 // console.log(car.model);
