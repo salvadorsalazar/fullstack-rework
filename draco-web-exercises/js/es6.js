@@ -35,29 +35,29 @@ while (true) {
 
 console.log(name);
 
-let name = 'jojo';
-if (true) {let name = 'ben';}
-console.log(name);
+// let name = 'jojo';
+// if (true) {let name = 'javier';}
+// console.log(name);
 
-var name = 'jojo';
-if (true) {var name = 'ben';}
-console.log(name);
+// var name = 'jojo';
+// if (true) {var name = 'javier';}
+// console.log(name);
 
-let anotherName = 'ben';
+// let anotherName = 'javier';
 
-function scopeTester(){
-    var anotherName = 'sal';
-    let anotherName = 'sal';
-    anotherName = 'sal';
-}
-scopeTester();
-console.log(anotherName);
+// function scopeTester(){
+    // var anotherName = 'luis';
+    // let anotherName = 'luis';
+    // anotherName = 'luis';
+// }
+// scopeTester();
+// console.log(anotherName);
 
 // TEMPLATE LITERALS
 
-let name = 'salvador';
+let name = 'Javier';
 let job = 'programmer';
-let place = 'san antonio';
+let place = 'Texas';
 
 // old way
 console.log(name + ' is a ' + job + ' in ' + place);
@@ -69,9 +69,9 @@ console.log(`${name} is a ${job} in ${place}`);
 
 const car = {
     make: "Toyota",
-    model: "corolla",
-    year: 2020,
-    mileage: 62345
+    model: "Tacoma",
+    year: 2019,
+    mileage: 12657
 }
 
 const car2 = {
@@ -81,34 +81,34 @@ const car2 = {
     mileage: 17647
 }
 
-let make = car.make;
-let model = car.model;
+// let make = car.make;
+// let model = car.model;
 
-const {make, model, year, mileage} = car;
-console.log(`I spy a ${year} ${make} ${model} with ${mileage} miles`);
+// const {make, model, year, mileage} = car;
+// console.log(`I spy a ${year} ${make} ${model} with ${mileage} miles`);
+//
+// car.model = 'Tundra';
+//
+// console.log(car.model);
+//
+// const bicycle = {
+//     make: "Schwinn"
+// }
+//
+// car.tonneau = false;
+//
+// if (car.tonneau) {
+//     console.log("That toyota has a tonneau");
+// } else {
+//     console.log("You're gonna get rain in there. And leaves.");
+// }
 
-car.model = 'Tundra';
-
-console.log(car.model);
-
-const bicycle = {
-    make: "huffy"
-}
-
-car.tonneau = false;
-
-if (car.tonneau) {
-    console.log("That toyota has a tonneau");
-} else {
-    console.log("You're gonna get rain in there. And leaves.");
-}
-
-car = bicycle;
+// car = bicycle;
 
 // Arrow Functions
 
 const add = (num1, num2) => num1 + num2;
-console.log(add(25, 7));
+// console.log(add(25, 7));
 
 // traditional function expression
 // variable declaration keyword
@@ -128,17 +128,17 @@ const sum = (num1, num2) => num1 + num2;
 // if parameters === 1 {no parentheses needed}
 const addTen = number => number + 10;
 
-if parameters === 0 {use empty parentheses}
-const helloWorld = ()=>"Hello World";
-console.log(helloWorld());
-
-const doSomething = number => {
-    if (number > 100){
-        console.log("big");
-    } else {
-        console.log("small");
-    }
-}
+// if parameters === 0 {use empty parentheses}
+// const helloWorld = ()=>"Hello World";
+// console.log(helloWorld());
+//
+// const doSomething = number => {
+//     if (number > 100){
+//         console.log("big");
+//     } else {
+//         console.log("small");
+//     }
+// }
 
 // you can declare default values for function parameters
 // const addSomethingSpecific = (augend, addend = 25) => augend + addend;
@@ -153,10 +153,10 @@ const doSomething = number => {
 // allows you to iterate over data types that are defined as iterable objects -- strings and arrays, as well as nodeLists. But not regular objects.
 
 // Iterate over an array
-const instructors = ["sal", "angela", "scarlett", "aden"];
-for (const name of instructors) {
-    console.log(`${name} is  at salazar residence!`);
-}
+const instructors = ["Javier", "Justin", "Jay", "David"];
+// for (const name of instructors) {
+//     console.log(`${name} teaches at Codeup!`);
+// }
 
 // Array with four elements
 // First iteration: declares const name = "Javier"
