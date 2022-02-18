@@ -81,8 +81,8 @@ const car2 = {
     mileage: 17647
 }
 
-// let make = car.make;
-// let model = car.model;
+let make = car.make;
+let model = car.model;
 
 // const {make, model, year, mileage} = car;
 // console.log(`I spy a ${year} ${make} ${model} with ${mileage} miles`);
