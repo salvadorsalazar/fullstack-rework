@@ -63,6 +63,7 @@
             // The quotient (q = a / n) is calculated according to the corresponding rounding mode.
             // The remainder (r) is calculated as: r = a - n * q.
             //
+
             // UP         0 The remainder is positive if the dividend is negative, else is negative.
             // DOWN       1 The remainder has the same sign as the dividend (JavaScript %).
             // FLOOR      3 The remainder has the same sign as the divisor (Python %).
