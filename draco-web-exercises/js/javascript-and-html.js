@@ -2,7 +2,7 @@
 
 // alert
 
-// alert("Hi, I am a JavaScript alert!");
+alert("Hi, I am a JavaScript alert!");
 
 // confirm
 
