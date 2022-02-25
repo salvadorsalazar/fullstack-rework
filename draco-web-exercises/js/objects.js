@@ -2,6 +2,14 @@
     "use strict";
 
     /**
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
      * TODO:
      * Create an object with firstName and lastName properties that are strings
      * with your first and last name. Store this object in a variable named
