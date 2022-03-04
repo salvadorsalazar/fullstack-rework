@@ -100,6 +100,7 @@ function analyzeColor(colorInput) {
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
 //  */
+
 // var colorInput = prompt("enter a color");
 // alert(analyzeColor(colorInput));
 /* ########################################################################## */
