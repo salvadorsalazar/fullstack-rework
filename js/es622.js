@@ -3,28 +3,28 @@
  */
 const users = [
   {
-    name: 'zach',
-    email: 'zach@codeup.com',
+    name: 'mac',
+    email: 'mac@codeup.com',
     languages: ['javascript', 'bash']
   },
   {
-    name: 'ryan',
-    email: 'ryan@codeup.com',
+    name: 'sal',
+    email: 'sal@codeup.com',
     languages: ['clojure', 'javascript']
   },
   {
-    name: 'luis',
-    email: 'luis@codeup.com',
+    name: 'bilbo',
+    email: 'bilbo@codeup.com',
     languages: ['java', 'scala', 'php']
   },
   {
-    name: 'fernando',
-    email: 'fernando@codeup.com',
+    name: 'tommy',
+    email: 'tommy@codeup.com',
     languages: ['java', 'php', 'sql']
   },
   {
-    name: 'justin',
-    email: 'justin@codeup.com',
+    name: 'putin',
+    email: 'putin@codeup.com',
     languages: ['html', 'css', 'javascript', 'php']
   }
 ];
